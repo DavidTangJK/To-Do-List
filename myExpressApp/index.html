@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="box" id="heading">
+  <h1> Today </h1>
+</div>
+
+<div class="box">
+
+  <form action="/delete" method="post">
+
+    <div class="item">
+      <input type="checkbox" value="63091ad052d172c86e7386f0" onChange="this.form.submit()" name="checkbox">
+      <p>Time to eat!</p>
+    </div>
+    <input type="hidden" name="listName" value="Today"></input>
+  </form>
+
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button type="submit" name="list" value="Today">+</button>
+  </form>
+</div>
+
+
+
+</body>
+
+<footer>
+  Copyright 2018 The App Brewery
+</footer>
+
+</html>
