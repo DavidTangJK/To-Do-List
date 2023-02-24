@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://dtang:Dtjk9264!@cluster0.e8eunzd.mongodb.net/todolistDB", {
+mongoose.connect("mongodb+srv://dtang:" + process.env.password + "@cluster0.e8eunzd.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true
 });
 
